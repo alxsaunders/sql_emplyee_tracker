@@ -1,7 +1,11 @@
 const connection = require("./connection")
 
+class database {
+constructor(connection) {
+    this.connection = connection;
+}
  // update server
- function updateServer() {
+updateServer() {
     connection.query("SELECT * from role", function(error, res) {
       allroles = res.map(role => ({ name: role.title, value: role.id }));
     });
@@ -17,3 +21,4 @@ const connection = require("./connection")
       }));
     });
   }
+}

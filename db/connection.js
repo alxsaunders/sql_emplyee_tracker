@@ -13,8 +13,8 @@ var connection = mysql.createConnection({
   connection.connect(function(err) {
     if (err) throw err;
     console.log("\nWelcome to the Employee Management System!\n");
-    startEmployeeManager();
-    updateServer();
+    // startEmployeeManager();
+    // updateServer();
   });
 
   module.exports = connection;
