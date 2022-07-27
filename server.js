@@ -1,12 +1,20 @@
-const inquirer = require("inquirer");
+const { prompt } = require("inquirer");
+const logo = require("asciiart-logo")
 const mysql = require("mysql2");
 const consoleTable = require("console.table");
 
+
+init()
+
+function init() {
+    const logoText = logo({ name: "Emplyee Mamager"}).render();
+    console.log(logoText)
+}
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "yourRootPassword",
+  password: "rootroot",
   database: "employee_trackerDB"
 });
 
@@ -36,8 +44,7 @@ connection.connect(function(err) {
 });
 
 function startEmployeeManager() {
-  inquirer
-    .prompt({
+    prompt({
       name: "action",
       type: "list",
       message: "What would you like to do?",

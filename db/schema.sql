@@ -26,8 +26,3 @@ CREATE TABLE employee (
     manager_id INT NULL,
     PRIMARY KEY (id) 
 );
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Priv
