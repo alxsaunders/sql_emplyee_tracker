@@ -21,7 +21,7 @@ Assignment is to build a solution for managing a company's employee database usi
 
 # Walkthrough-Video
 
-[Walkthrough Video Link]()
+[Walkthrough Video Link](https://drive.google.com/file/d/1db5iUTB07XkC8uW1BP-qbXs1EqYpMgaT/view)
 
 
 # ScreenShots 
