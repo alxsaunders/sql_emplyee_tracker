@@ -26,7 +26,7 @@ Assignment is to build a solution for managing a company's employee database usi
 
 # ScreenShots 
 
-![Screenshot]()
+![Screenshot](db/images/screenshot2.png)
 
-![Screenshot]()
+![Screenshot](db/images/screenshot1.png)
 

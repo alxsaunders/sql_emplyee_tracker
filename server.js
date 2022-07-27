@@ -1,7 +1,7 @@
-const { prompt } = require("inquirer");
+const inquirer = require("inquirer");
 const logo = require("asciiart-logo")
 const mysql = require("mysql2");
-const consoleTable = require("console.table");
+require("console.table");
 
 
 init()
@@ -44,7 +44,8 @@ connection.connect(function(err) {
 });
 
 function startEmployeeManager() {
-    prompt({
+    inquirer
+    .prompt({
       name: "action",
       type: "list",
       message: "What would you like to do?",
